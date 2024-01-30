@@ -49,6 +49,17 @@
     </style>
 </head>
 <body>
+
+    <nav class="relative bg-white shadow dark:bg-gray-500">
+      <div class="container px-6 py-3 mx-auto md:flex">
+          <div class="flex items-center justify-between">
+              <a href="#">
+                  <img class="w-auto h-6 sm:h-7" src="./Logo_and_text_black.png" alt="">
+              </a>
+          </div>
+
+      </div>
+    </nav>
     <!-- component -->
     <div class="flex flex-col">
       <div class="flex mt-8 ml-8">
@@ -64,146 +75,156 @@
         </div>
       </div>
 
-  <!-- Main Content -->
-        <div class="flex-grow flex flex-col md:flex-row items-center gap-8 p-12 mt-4">
-        
-          <div class="w-full h-full bg-gray-200">           
-            <div class="p-12">
-              <div>
-                <label for="countries" class="block mb-2 text-lg font-medium text-gray-900"> Plan </label>
-                <select class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "> 
-                  <option>Basic 200</option>
-                  <option>Silver 400</option>
-                  <option>Gold 600</option>
-                  <option>Diamond 800</option>
-                  <option>Premium 1000</option>
-                </select>
-              </div>
-
-              <div class="mt-6">
-                <label for="Duration" class="block mb-2 text-lg font-medium text-gray-900 ">Duration</label>
-                <select id="Duration" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-                  <option selected>Choose Duration</option>
-                  <option value="1 Week">1 Week</option>
-                  <option value="2 Weeks">2 Weeks</option>
-                  <option value="1 Month">1 Month</option>
-                  <option value="2 Months">2 Months</option>
-                  <option value="6 Months">6 Months</option>
-                  <option value="1 Year">1 Year</option>
-                </select>
-              </div>
-
-              <div class="flex justify-end mt-4">
-                <button id="continueBtn" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Continue</button>
-              </div>
+      <!-- Main Content -->
+      <div class="flex-grow flex flex-col md:flex-row items-center gap-8 px-12 py-8">
+      
+        <div class="w-full h-full bg-gray-200">           
+          <div class="p-12">
+            <div>
+              <label for="countries" class="block mb-2 text-lg font-medium text-gray-900"> Plan </label>
+              <select class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "> 
+                <option>Basic 200</option>
+                <option>Silver 400</option>
+                <option>Gold 600</option>
+                <option>Diamond 800</option>
+                <option>Premium 1000</option>
+              </select>
             </div>
-          </div>
 
-          <div class="w-full bg-gray-200 ">
-            <div class="p-12">
-              <div>
-                <p class="block mb-2 text-lg font-medium text-gray-900"> Total (NGN) </p>
-                <div class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "> 
-                  <span>0</span>
-                </div>
-              </div>
-  
-              <div class="mt-6">
-                <p class="block mb-2 text-lg font-medium text-gray-900"> Pay Now </p>
-                <div class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "> 
-                  <span>0</span>
-                </div>
-              </div>
-  
-              <div class="flex justify-between mt-4">
-                <button type="button" class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800" onclick="closeModal()">Cancel</button>
-  
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Proceed</button>
-              </div>
+            <div class="mt-6">
+              <label for="Duration" class="block mb-2 text-lg font-medium text-gray-900 ">Duration</label>
+              <select id="Duration" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                <option selected>Choose Duration</option>
+                <option value="1 Week">1 Week</option>
+                <option value="2 Weeks">2 Weeks</option>
+                <option value="1 Month">1 Month</option>
+                <option value="2 Months">2 Months</option>
+                <option value="6 Months">6 Months</option>
+                <option value="1 Year">1 Year</option>
+              </select>
+            </div>
+
+            <div class="flex justify-end mt-4">
+              <button id="continueBtn" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Continue</button>
             </div>
           </div>
         </div>
+
+        <div class="w-full bg-gray-200 ">
+          <div class="p-12">
+            <div>
+              <p class="block mb-2 text-lg font-medium text-gray-900"> Total (NGN) </p>
+              <div class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "> 
+                <span>0</span>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <p class="block mb-2 text-lg font-medium text-gray-900"> Pay Now </p>
+              <div class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "> 
+                <span>0</span>
+              </div>
+            </div>
+
+            <div class="flex justify-between mt-4">
+              <button type="button" class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800" onclick="closeModal()">Cancel</button>
+
+              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
+    <footer class="fixed bottom-0 w-full p-4 text-sm">
+      <div class="flex justify-center">
+        <p id="copyright"></p>
+      </div>
+    </footer>    
       
-      
-      <script>
-        const continueBtn = document.getElementById('continueBtn');
-        const modalOverlay = document.getElementById('modalOverlay');
-        const powerPack = document.getElementById('powerPack');
-        const tooltip = document.getElementById('tooltip');
+    <script>
+      const continueBtn = document.getElementById('continueBtn');
+      const modalOverlay = document.getElementById('modalOverlay');
+      const powerPack = document.getElementById('powerPack');
+      const tooltip = document.getElementById('tooltip');
+      // Get the current year
+      const currentYear = new Date().getFullYear();
 
-        powerPack.addEventListener('mouseover', () => {
-          tooltip.style.display = 'block';
-          // tooltip.style.transform = 'translateX(-50%) scale(1)';
-          tooltip.style.opacity = '1';
-          tooltip.style.width = '40rem';
-        });
+      // Update the copyright text
+      document.getElementById('copyright').innerText = `${currentYear} © FreeFrontend · Privacy Policy and Cookies Policy · Youtube · Twitter · Facebook · Pinterest · Tumblr · Linkedin · Reddit · VK · RSS`;
 
-        powerPack.addEventListener('mouseout', () => {
-          tooltip.style.display = 'none';
-          tooltip.style.transform = 'translateX(-50%) scale(0)';
-          tooltip.style.opacity = '0';
-        });
-
-        continueBtn.addEventListener('click', () => {
-          modalOverlay.style.display = 'flex';
-        });
-
-        function closeModal() {
-          modalOverlay.style.display = 'none';
-        }
-
-        function closeModal() {
-          modalOverlay.style.display = 'none';
-        }
-      </script>
-      <script>
-      let icon1 = document.getElementById("icon1");
-      let menu1 = document.getElementById("menu1");
-      let menu2 = document.getElementById("menu2");
-      let menu3 = document.getElementById("menu3");
-      const showMenu1 = (flag) => {
-        if (flag) {
-          icon1.classList.toggle("rotate-180");
-          menu1.classList.toggle("hidden");
-        }
-      };
-      let icon2 = document.getElementById("icon2");
-        // Hide menu2 on load
-      document.addEventListener("DOMContentLoaded", function() {
-        menu2.classList.add("hidden");
+      powerPack.addEventListener('mouseover', () => {
+        tooltip.style.display = 'block';
+        // tooltip.style.transform = 'translateX(-50%) scale(1)';
+        tooltip.style.opacity = '1';
+        tooltip.style.width = '40rem';
       });
-      
-      const showMenu2 = (flag) => {
-        if (flag) {
-          icon2.classList.toggle("rotate-180");
-          menu2.classList.toggle("hidden");
-          menu2.classList.toggle("flex");
-        }
-      };
-      let icon3 = document.getElementById("icon3");
-      
-      const showMenu3 = (flag) => {
-        if (flag) {
-          icon3.classList.toggle("rotate-180");
-          menu3.classList.toggle("flex");
-        }
-      };
-      
-      let Main = document.getElementById("Main");
-      let open = document.getElementById("open");
-      let close = document.getElementById("close");
-      
-      const showNav = (flag) => {
-        if (flag) {
-          Main.classList.toggle("-translate-x-full");
-          Main.classList.toggle("translate-x-0");
-          open.classList.toggle("hidden");
-          close.classList.toggle("hidden");
-        }
-      };
-  
-      </script>
+
+      powerPack.addEventListener('mouseout', () => {
+        tooltip.style.display = 'none';
+        tooltip.style.transform = 'translateX(-50%) scale(0)';
+        tooltip.style.opacity = '0';
+      });
+
+      continueBtn.addEventListener('click', () => {
+        modalOverlay.style.display = 'flex';
+      });
+
+      function closeModal() {
+        modalOverlay.style.display = 'none';
+      }
+
+      function closeModal() {
+        modalOverlay.style.display = 'none';
+      }
+    </script>
+    <script>
+    let icon1 = document.getElementById("icon1");
+    let menu1 = document.getElementById("menu1");
+    let menu2 = document.getElementById("menu2");
+    let menu3 = document.getElementById("menu3");
+    const showMenu1 = (flag) => {
+      if (flag) {
+        icon1.classList.toggle("rotate-180");
+        menu1.classList.toggle("hidden");
+      }
+    };
+    let icon2 = document.getElementById("icon2");
+      // Hide menu2 on load
+    document.addEventListener("DOMContentLoaded", function() {
+      menu2.classList.add("hidden");
+    });
+    
+    const showMenu2 = (flag) => {
+      if (flag) {
+        icon2.classList.toggle("rotate-180");
+        menu2.classList.toggle("hidden");
+        menu2.classList.toggle("flex");
+      }
+    };
+    let icon3 = document.getElementById("icon3");
+    
+    const showMenu3 = (flag) => {
+      if (flag) {
+        icon3.classList.toggle("rotate-180");
+        menu3.classList.toggle("flex");
+      }
+    };
+    
+    let Main = document.getElementById("Main");
+    let open = document.getElementById("open");
+    let close = document.getElementById("close");
+    
+    const showNav = (flag) => {
+      if (flag) {
+        Main.classList.toggle("-translate-x-full");
+        Main.classList.toggle("translate-x-0");
+        open.classList.toggle("hidden");
+        close.classList.toggle("hidden");
+      }
+    };
+
+    </script>
 
 </body>
 </html>
