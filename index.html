@@ -7,7 +7,7 @@
     <title>Login Page</title>
 </head>
 <body>
-    <div class="bg-white dark:bg-[#7554ae]">
+    <div class="bg-white dark:bg-[#e91e63]">
         <div class="flex justify-center h-screen">
             <!-- <div class="hidden bg-cover lg:block lg:w-3/5" style="background-image: url('https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100%; filter: brightness(70%);"></div> -->
             <div class="hidden bg-cover lg:block lg:w-3/5" id="slidingDiv" style="height: 100%; filter: brightness(70%);"></div>
@@ -22,37 +22,37 @@
     
                     <div class="mt-8">
                         <form>
-                            <div class="block w-full bg-[#F4F0EB] dark:bg-[#cbb4f3] rounded-md">
+                            <div class="block w-full bg-[#F4F0EB] rounded-md">
                                 <label for="email" class="block px-4 pt-1 text-sm text-gray-800 ">E-mail</label>
-                                <input type="email" name="email" id="email" placeholder="example@gmail.com" class="block w-full px-4 pt-0 pb-1 text-gray-700 placeholder-gray-400 bg-[#F4F0EB] border-none dark:placeholder-gray-800 dark:bg-[#cbb4f3] dark:text-gray-800 focus:border-none dark:focus:border-none focus:ring-none focus:outline-none rounded-b-md font-bold" value="" />
+                                <input type="email" name="email" id="email" placeholder="example@gmail.com" class="block w-full px-4 pt-0 pb-1 text-gray-700 placeholder-gray-400 bg-[#F4F0EB] border-none dark:placeholder-gray-800 dark:bg-[#ebe4e6c2] dark:text-gray-800 focus:border-none dark:focus:border-none focus:ring-none focus:outline-none rounded-b-md font-bold" value="" />
                             </div>
+                            <p class="mt-2 text-sm text-red-900">email is wrong</p>
     
-                            <div class="mt-6 block w-full bg-[#F4F0EB] dark:bg-[#cbb4f3] rounded-md">
+                            <div class="mt-6 block w-full bg-[#F4F0EB] rounded-md">
                                 <label for="password" class="block px-4 pt-1 text-sm text-gray-600 dark:text-gray-800">Password</label>
     
                                 <div class="relative">
-                                    <input type="password" value="" name="password" id="password" placeholder="Your Password" class="block w-full px-4 pt-0 pb-1 text-gray-700 placeholder-gray-400 bg-[#F4F0EB] border-none dark:placeholder-gray-800 dark:bg-[#cbb4f3] dark:text-gray-800 focus:border-none dark:focus:border-none focus:ring-none focus:outline-none rounded-b-md font-bold" />
+                                    <input type="password" value="" name="password" id="password" placeholder="Your Password" class="block w-full px-4 pt-0 pb-1 text-gray-700 placeholder-gray-400 bg-[#F4F0EB] border-none dark:placeholder-gray-800 dark:bg-[#ebe4e6c2] dark:text-gray-800 focus:border-none dark:focus:border-none focus:ring-none focus:outline-none rounded-b-md font-bold" />
                                     <span class="absolute flex items-center top-0 right-0 pr-4 text-gray-400 cursor-pointer">
                                         <!-- Add FontAwesome icon here -->
                                     </span>
-                                </div>
+                                </div>                               
                             </div>
+                            <p class="mt-2 text-sm text-red-900">password is wrong</p>
     
                             <div class="mt-6">
-                                <button class="w-full px-4 py-3 tracking-wide text-white transition-colors duration-300 transform bg-[#efa6b6] rounded-md hover:bg-white hover:border-2 hover:border-solid hover:border-[#efa6b6] hover:text-[#efa6b6] focus:outline-none focus:bg-[#efa6b6] focus:ring focus:ring-[#efa6b6] focus:ring-opacity-50" disabled="">
-                                    <!-- Add Loading state text -->Login
+                                <button id="loginButton" class="w-full px-4 py-3 tracking-wide text-white transition-colors duration-300 transform bg-[#330d1a] rounded-md hover:bg-white hover:border-2 hover:border-solid hover:border-[#e91e63] hover:text-[#e91e63] focus:outline-none focus:bg-[#e91e63] focus:ring focus:ring-[#e91e63] focus:ring-opacity-50 cursor-pointer" >
+                                    Login
                                 </button>
                             </div>
                         </form>
     
-                        <p class="mt-6 text-sm text-center text-gray-800">Don't know password? <a href="/forgotpassword" class="text-[#efa6b6] focus:outline-none focus:underline hover:underline">Change Password</a>.</p>
+                        <p class="mt-6 text-sm text-center text-gray-800">Don't know password? <a href="/forgotpassword" class="text-white focus:outline-none focus:underline hover:underline">Change Password</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-
 
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <script>
@@ -79,7 +79,5 @@
             // Add other JavaScript code from the React component as needed
         });
     </script>
-    <script src="./script.js"></script>
-    <script src="src/script.js"></script>
 </body>
 </html>
